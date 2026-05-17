@@ -1,13 +1,117 @@
-body {
-    background-color: pink;
-    font-family: Arial;
-    padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
 
-h1 {
-    color: white;
-}
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      z-index: 1000;
+    }
 
-p {
-    color: black;
-}
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Links inschuiven */
+    .from-left {
+      transform: translateX(-100px);
+    }
+
+    .from-left.show {
+      transform: translateX(0);
+    }
+
+    /* Rechts inschuiven */
+    .from-right {
+      transform: translateX(100px);
+    }
+
+    .from-right.show {
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+   <section id="about" class="from-left">
+    <h1>Over Mij</h1>
+     <p> Ik ben Main Shirin, een leergierige studente die graag nieuwe dingen leert en zichzelf blijft ontwikkelen. 
+     Ik heb gekozen voor ICT omdat technologie mij erg interesseert. Daarnaast wilde ik beter begrijpen hoe ICT ervoor 
+     zorgt dat systemen, netwerken en digitale processen soepel functioneren. 
+     Tijdens mijn opleiding leer ik steeds meer over de technische wereld en ontwikkel ik vaardigheden op het gebied 
+     van webdevelopment, netwerken en databases.
+
+     </p>
+  </section>
+
+  <section id="contact" class="from-right">
+    <h1>Contact</h1>
+  </section>
+
+  <script>
+    // Laat secties verschijnen bij scroll
+    const sections = document.querySelectorAll("section");
+
+    function checkSections() {
+      const triggerBottom = window.innerHeight * 0.8;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          sec.classList.add("show");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", checkSections);
+    window.addEventListener("load", checkSections);
+
+    // Klik op menu -> smooth scroll
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href"))
+                .scrollIntoView({behavior: "smooth"});
+      });
+    });
+  </script>
+</body>
+</html>
