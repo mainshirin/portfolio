@@ -1,0 +1,18 @@
+/* Page-specific styles for Contact */
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin: 0.8rem 0;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
