@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mijn portfolio</title>
-  <link rel="stylesheet" href="../css/main.css"> <!-- pad aanpassen indien nodig -->
+  <link rel="icon" type="image/png" href="img/favicon.zip">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- Header met logo en titel -->
-  <header>
-    <div class="logo-title">
-         <img src="../img/logo.png" alt="Logo" class="logo" width="250" height="200"> <!-- pad aanpassen indien nodig -->
-        <h1>Mijn portfolio</h1>
-    </div>
-  </header>
+  <nav>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <a href="index.html">Home</a>
+    <a href="about.html">Over mij</a>
+    <a href="work.html">Projecten</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <!-- Navigatiebalk -->
-  --
-  <section id="about" class="from-left">
-    <h1>Over Mij</h1>
-     <p> Ik ben Main Shirin, een leergierige studente die graag nieuwe dingen leert en zichzelf blijft ontwikkelen. 
-     Ik heb gekozen voor ICT omdat technologie mij erg interesseert. Daarnaast wilde ik beter begrijpen hoe ICT ervoor 
-     zorgt dat systemen, netwerken en digitale processen soepel functioneren. 
-     Tijdens mijn opleiding leer ik steeds meer over de technische wereld en ontwikkel ik vaardigheden op het gebied 
-     van webdevelopment, netwerken en databases.
-     </p>
-     
-<script src="js/script.js"></script>
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/work.css">
-<link rel="stylesheet" href="css/contact.css">
+  <main class="page-content">
+    <section id="home" class="text-box" from-right>
+     <img src="img/profile.jpeg" alt="Profiel foto Main Shirin" class="profielfoto">
+      <h1>Mijn portfolio</h1>
+      <p> Welkom bij mijn portfolio. Hier vind je een overzicht van mij projecten, vaardigheden en ervaringen.
+        </p>
+    </section>
+    <section id="about" class="text-box" from-left>
+      <h2>Wie ben ik?</h2>
+      <p>Ik ben Main Shirin, een leergierige student die geïnteresseerd is in ICT, 
+        webdevelopment, netwerken en databases. Tijdens mijn opleiding ontwikkel ik 
+        technische vaardigheden en leer ik veel over digitale systemen.</p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
