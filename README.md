@@ -8,12 +8,7 @@ Dit project is mijn persoonlijke portfolio waarin ik mijn werk, leerproces en pr
 - `contact.html` – contactpagina  
 - `css/` – map met alle stijlen (bijv. `main.css`)  
 - `js/` – map met scripts (bijv. `script.js`)  
-- `img/` – **vereiste map voor afbeeldingen** (logo’s, foto’s, achtergronden)  
-
-> ⚠️ Alle afbeeldingen moeten in de `img`‑map staan. Voorbeeld:  
-> ```html
-> <img src="img/logo.png" alt="Logo">
-> ```
+- `img/` – **vereiste map voor afbeeldingen** (logo’s, foto’s, achtergronden)  `
 
 ## 🚀 Installatie
 1. Clone de repository:  
