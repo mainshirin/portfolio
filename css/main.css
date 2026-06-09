@@ -131,4 +131,18 @@ p {
     border-radius: 12px;
     padding: 1.5rem;
   }
+  
+  footer {
+  background-color: #12131a;   /* donkerblauw/zwart */
+  color: #f8b400;              /* goudkleurig */
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
 }

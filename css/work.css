@@ -1,5 +1,43 @@
 /* Page-specific styles for Work */
 
-#work h1 {
+#work.profile-section {
+display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#workfoto  {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+#work-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+#work-text h1 {
   margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  #work.profile-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  #workfoto  {
+    width: 180px;
+    height: 180px;
+  }
+
+  #work-text {
+    text-align: center;
+  }
 }
