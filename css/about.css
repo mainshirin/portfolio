@@ -45,4 +45,23 @@
   .profile-text {
     text-align: center;
   }
+  .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #12131a;   /* donkerblauw */
+  color: #f8b400;              /* goudkleurig */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
 }
