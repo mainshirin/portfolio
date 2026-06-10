@@ -43,15 +43,22 @@ img {
 }
 
 .skills-logos i {
-  font-size: 60px;   /* grootte van iconen */
-  color: #f8b400;    /* goudkleurig */
+  font-size: 60px;
   transition: transform 0.3s ease;
 }
 
-.skills-logos i:hover {
-  transform: scale(1.2);
-  color: #ececec;
+.skills-logos i {
+  font-size: 60px;
+  transition: transform 0.3s ease;
 }
+
+/* Officiële kleuren */
+.html { color: #E34F26; }     /* HTML oranje */
+.css { color: #1572B6; }      /* CSS blauw */
+.js { color: #F7DF1E; }       /* JavaScript geel */
+.mysql { color: #00618A; }    /* MySQL blauw */
+.node { color: #339933; }     /* Node.js groen */
+
 nav {
   position: fixed;
   top: 0;
