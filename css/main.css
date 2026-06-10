@@ -23,6 +23,8 @@ body {
   background-position: center;  /* centreert de foto */
   background-repeat: no-repeat; /* voorkomt herhaling */
 }
+body { background-color: lightblue; }
+
 body::before {
   content: "";
   position: fixed;
