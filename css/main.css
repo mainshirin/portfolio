@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
 
   /* Achtergrondafbeelding */
-  background-image: url("img/achtergrond.jpeg"); /* pad naar jouw foto */
+  background-image: url("img/Achtergrond.jpeg"); /* pad naar jouw foto */
   background-size: cover;       /* zorgt dat de foto het hele scherm vult */
   background-position: center;  /* centreert de foto */
   background-repeat: no-repeat; /* voorkomt herhaling */
